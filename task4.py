@@ -5,7 +5,7 @@ my_list = list()
 for i in range(0,my_list_length):
     number = int(input())
     my_list.append(number)
-if max(my_list) < 0:
+if max(my_list) < 0 or min(my_list) < 0:
     print('Minimal Positive integer is 1')
     
 else:
@@ -18,3 +18,5 @@ else:
         if my_list[i]+1 != next_number:
             print('Minimal positive integer is: ', my_list[i]+1)
             break
+
+    
